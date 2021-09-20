@@ -30,14 +30,19 @@ namespace MultiLayerStitching
                     .AddTypeExtension<ThirdQueries>()
                 ;
 
+            // Imagine one team creating first and second service and adding a gateway called 'Merge'.
+            // ** A great example would be this beeing an internal gateway
             services.AddGraphQLServer("Merge")
                 .AddLocalSchema("First")
                 .AddLocalSchema("Second")
                 .AddTypeExtensionsFromString(@"extend type Query { bar2: String @delegate(schema: ""Second"", path: ""bar"") }");
 
+            // Imagine another team having ownership over a third service and wanting to integrate some of the code exposed in 'Merge'
+            // ** And this beeing the public facing gateway
             services.AddGraphQLServer()
                 .AddLocalSchema("Merge")
                 .AddLocalSchema("Third")
+                .IgnoreField("Query", "Foo", "Merge")
                 .AddTypeExtensionsFromString(@"extend type Query { bar3: String @delegate(schema: ""Third"", path: ""hello('you')"") }");
         }
 
