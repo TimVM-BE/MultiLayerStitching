@@ -55,6 +55,7 @@ namespace MultiLayerStitching
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGraphQL();
+                endpoints.MapGraphQL("/merge/graphql", "Merge");
             });
         }
     }
