@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiLayerStitching", "MultiLayerStitching\MultiLayerStitching.csproj", "{9E24525F-055D-4524-AE76-FC8BF250A17F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E24525F-055D-4524-AE76-FC8BF250A17F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E24525F-055D-4524-AE76-FC8BF250A17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E24525F-055D-4524-AE76-FC8BF250A17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E24525F-055D-4524-AE76-FC8BF250A17F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6EAC31F-9FA7-4D7F-8AA1-E0C95329F96E}
+	EndGlobalSection
+EndGlobal
